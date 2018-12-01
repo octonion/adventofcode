@@ -1,12 +1,10 @@
-import numpy as np
-
-data = np.loadtxt(open('input.txt', 'rb'), dtype='int')
+data = [int(i) for i in open("input.txt").readlines()]
 
 n = sum(data)
 l = len(data)
 
-sums = []
-sums_mod = []
+sums = set([])
+sums_mod = set([])
 sum = 0
 
 repeats = {}
@@ -20,8 +18,8 @@ for idx, val in enumerate(data):
             min_index = l*floor(sum/n)+repeats[sum%n]-l*fracs[sum%n]
             min_sum = sum
     else:
-        sums.append(sum)
-        sums_mod.append(sum%n)
+        sums.add(sum)
+        sums_mod.add(sum%n)
         repeats[sum%n] = idx
         fracs[sum%n] = floor(sum/n)
 
