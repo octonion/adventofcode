@@ -11,7 +11,7 @@ sum = 0
 
 repeats = {}
 fracs = {}
-min_index = n*n
+min_index = l*l
 min_sum = None
 for idx, val in enumerate(data):
     sum += val
