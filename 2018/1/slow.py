@@ -2,7 +2,7 @@ import numpy as np
 
 data = np.loadtxt(open('input.txt', 'rb'), dtype='int')
 
-sums = []
+sums = set([])
 sum = 0
 found = False
 while not(found):
@@ -13,4 +13,4 @@ while not(found):
             found = True
             break
         else:
-            sums.append(sum)
+            sums.add(sum)
