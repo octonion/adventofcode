@@ -1,0 +1,2 @@
+Total sum = 516
+First repeat = 71892
