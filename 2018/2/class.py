@@ -16,7 +16,6 @@ n = len(data)
 inner = []
 max = 0
 max_right = ''
-matches = []
 for i in range(0,n):
     for j in range(0,i):
         c = Code(data[i])
@@ -25,5 +24,4 @@ for i in range(0,n):
         if dot > max:
             max = dot
             max_right = right
-            matches = [c,d]
 print(max,max_right)
