@@ -1,5 +1,7 @@
 begin;
 
+create extension if not exists fuzzystrmatch;
+
 create schema if not exists aoc;
 
 drop table if exists aoc.codes;
