@@ -1,0 +1,11 @@
+BEGIN
+CREATE SCHEMA
+DROP TABLE
+CREATE TABLE
+COPY 250
+            code            |            code            
+----------------------------+----------------------------
+ qysdtrkloagnpfozuwujmhrbvx | qysdtrkloagnxfozuwujmhrbvx
+(1 row)
+
+COMMIT
