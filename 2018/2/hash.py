@@ -9,7 +9,6 @@ for code in data:
             counts[code[i]] += 1
         else:
             counts[code[i]] = 1
-    print(counts)
     if (2 in counts.values()):
         two += 1
     if (3 in counts.values()):
