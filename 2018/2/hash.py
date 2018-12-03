@@ -16,4 +16,3 @@ for code in data:
         three += 1
         
 print(two*three)
-        

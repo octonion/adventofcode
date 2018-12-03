@@ -27,6 +27,3 @@ for i in range(0,n):
             max_right = right
             matches = [c,d]
 print(max,max_right)
-
-        
-        
