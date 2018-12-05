@@ -17,7 +17,6 @@ print(len(data))
 results = []
 for l in ascii_lowercase:
     data = copy.replace(l,"").replace(l.upper(),"")
-    data.strip(l).strip(l.upper())
     i = 0
     while i<len(data)-1:
         if (data[i].upper()==data[i+1].upper()) and not(data[i]==data[i+1]):
