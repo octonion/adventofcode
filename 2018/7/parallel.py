@@ -12,7 +12,6 @@ for x,y in data:
     else:
         before[y].add(x)
 
-workers = 5
 total = 0
 inactive = 5
 active = {}
