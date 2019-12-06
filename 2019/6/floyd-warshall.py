@@ -21,5 +21,20 @@ for orbit in orbits:
     m[left,right] = 1
 
 m = floyd_warshall(m,directed=True,overwrite=True,unweighted=True)
+
+# Part 1
+
 i = bodies.index("COM")
-print(int(round(sum(m[i]))))
+print(int(sum(m[i])))
+
+# Part 2
+
+i = bodies.index("SAN")
+j = bodies.index("YOU")
+
+d = float("inf")
+for k in xrange(0,n):
+    if m[k,i]+m[k,j] < d:
+        d = m[k,i]+m[k,j]
+
+print(int(d)-2)

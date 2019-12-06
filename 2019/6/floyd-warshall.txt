@@ -1,5 +1,6 @@
 247089
+442
 
-real	0m0.283s
-user	0m0.540s
-sys	0m0.565s
+real	0m0.285s
+user	0m0.575s
+sys	0m0.562s
