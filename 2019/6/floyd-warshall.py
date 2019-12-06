@@ -1,6 +1,5 @@
 import sys
 import numpy as np
-from scipy.sparse import csr_matrix
 from scipy.sparse.csgraph import floyd_warshall
 
 orbits = []
@@ -33,7 +32,7 @@ i = bodies.index("SAN")
 j = bodies.index("YOU")
 
 d = float("inf")
-for k in xrange(0,n):
+for k in range(0,n):
     if m[k,i]+m[k,j] < d:
         d = m[k,i]+m[k,j]
 
